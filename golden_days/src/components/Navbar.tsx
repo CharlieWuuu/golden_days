@@ -1,10 +1,13 @@
 // src/components/Navbar.tsx
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 export default function Navbar() {
+    const { isLoggedIn, logout } = useAuth();
+
     return (
-        <nav style={{ padding: '1rem', borderBottom: '1px solid #ccc' }}>
-            <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none', padding: 0 }}>
+        <nav style={{ width: 'calc(100% - 2rem)', padding: '1rem', borderBottom: '1px solid #ccc', display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+            <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none', padding: 0, margin: 0 }}>
                 <li>
                     <Link to="/">首頁</Link>
                 </li>
@@ -45,6 +48,13 @@ export default function Navbar() {
                     <Link to="/orders/123">個別訂單</Link>
                 </li> */}
             </ul>
+            {isLoggedIn ? (
+                <a onClick={logout} style={{ cursor: 'pointer' }}>
+                    登出
+                </a>
+            ) : (
+                <Link to="/account/login">登入</Link>
+            )}
         </nav>
     );
 }

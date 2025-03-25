@@ -13,6 +13,7 @@ import Experiences from './pages/Experiences';
 import ExperienceDetail from './pages/ExperienceDetail';
 import Goods from './pages/Goods';
 import GoodsDetail from './pages/GoodsDetail';
+import Login from './pages/Login';
 
 function App() {
     return (
@@ -37,6 +38,8 @@ function App() {
 
                 <Route path="/goods" element={<Goods />} />
                 <Route path="/goods/:id" element={<GoodsDetail />} />
+
+                <Route path="/account/login" element={<Login />} />
             </Routes>
         </Router>
     );

@@ -1,4 +1,8 @@
 // About.tsx
 export default function About() {
-    return <h1>關於我們</h1>;
+    return (
+        <div style={{ padding: '2rem' }}>
+            <h1>關於我們</h1>
+        </div>
+    );
 }
