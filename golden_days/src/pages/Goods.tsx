@@ -7,7 +7,7 @@ export default function Goods() {
             <h1>商品清單</h1>
             <ul>
                 {goods.map((item) => (
-                    <li key={item.id} style={{ marginBottom: '1rem' }}>
+                    <li key={item.id}>
                         <h3>{item.name}</h3>
                         <p>{item.description}</p>
                         <Link to={`/goods/${item.id}`}>商品資訊</Link>
