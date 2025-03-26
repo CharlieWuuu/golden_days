@@ -14,6 +14,7 @@ import ExperienceDetail from './pages/ExperienceDetail';
 import Goods from './pages/Goods';
 import GoodsDetail from './pages/GoodsDetail';
 import Login from './pages/Login';
+import './App.css';
 
 function App() {
     return (
