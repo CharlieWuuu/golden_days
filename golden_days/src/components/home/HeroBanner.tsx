@@ -8,7 +8,7 @@ export default function HeroBanner() {
         const handleScroll = () => {
             if (!heroRef.current) return;
             const scrollY = window.scrollY;
-            heroRef.current.style.backgroundPositionY = `${scrollY * 1}px`; // 你可以調整 0.5 -> 越小越「遠」
+            heroRef.current.style.setProperty('--bg-offset', `${scrollY * 0.2}px`);
         };
 
         window.addEventListener('scroll', handleScroll);
