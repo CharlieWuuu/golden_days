@@ -3,6 +3,7 @@ import { articles } from '../data/articles';
 
 export default function ArticleDetail() {
     const { id } = useParams();
+
     const article = articles.find((a) => a.id === id);
 
     if (!article) {

@@ -8,7 +8,7 @@ export default function HeroBanner() {
         const handleScroll = () => {
             if (!heroRef.current) return;
             const scrollY = window.scrollY;
-            heroRef.current.style.setProperty('--bg-offset', `${scrollY * 0.2}px`);
+            heroRef.current.style.setProperty('--bg-offset', `${scrollY * 0.8}px`);
         };
 
         window.addEventListener('scroll', handleScroll);

@@ -9,21 +9,21 @@ import Orders from './pages/Orders';
 import OrderDetail from './pages/OrderDetail';
 import Articles from './pages/Articles';
 import ArticleDetail from './pages/ArticleDetail';
-import Experiences from './pages/Experiences';
-import ExperienceDetail from './pages/ExperienceDetail';
+import Events from './pages/Events';
+import EventsDetail from './pages/EventsDetail';
 import Goods from './pages/Goods';
 import GoodsDetail from './pages/GoodsDetail';
 import Login from './pages/Login';
 import Footer from './components/Footer';
-import './App.css';
+import style from './App.module.scss';
 
 function App() {
     return (
         <Router>
-            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            <div className={style.App}>
                 <Navbar />
 
-                <main style={{ flexGrow: 1 }}>
+                <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
@@ -38,8 +38,8 @@ function App() {
                         <Route path="/articles" element={<Articles />} />
                         <Route path="/articles/:id" element={<ArticleDetail />} />
 
-                        <Route path="/experiences" element={<Experiences />} />
-                        <Route path="/experiences/:id" element={<ExperienceDetail />} />
+                        <Route path="/events" element={<Events />} />
+                        <Route path="/events/:id" element={<EventsDetail />} />
 
                         <Route path="/goods" element={<Goods />} />
                         <Route path="/goods/:id" element={<GoodsDetail />} />

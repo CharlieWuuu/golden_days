@@ -1,0 +1,26 @@
+.Navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 1000;
+    max-width: calc(1440px - 2rem);
+    margin: auto;
+    a {
+        color: var(--text-black);
+        cursor: pointer;
+    }
+
+    div {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
