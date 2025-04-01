@@ -1,5 +1,7 @@
+@use '../../styles/colors';
+
 .HeroBanner {
-    --bg-offset: -20px;
+    --bg-offset: -80px;
     height: calc(80vh - 8rem);
     display: flex;
     flex-direction: column;
@@ -15,13 +17,14 @@
     position: relative;
     overflow: hidden;
     will-change: background-position;
+
     div {
         h1 {
-            color: var(--text-white);
+            color: colors.$text-white;
             font-size: 7rem;
         }
         p {
-            color: var(--text-white);
+            color: colors.$text-white;
             font-size: 2rem;
         }
     }
@@ -29,7 +32,7 @@
         border-radius: 0px;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid var(--text-white);
+        border-bottom: 1px solid colors.$text-white;
         padding: 0.5rem 1rem;
         cursor: pointer;
         a {
@@ -39,7 +42,7 @@
             }
         }
         &:hover {
-            border-bottom: 1px solid var(--text-white);
+            border-bottom: 1px solid colors.$text-white;
         }
     }
 }

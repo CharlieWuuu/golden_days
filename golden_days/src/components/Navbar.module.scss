@@ -1,3 +1,5 @@
+@use '../styles/colors';
+
 .Navbar {
     top: 0;
     left: 0;
@@ -11,11 +13,11 @@
     gap: 1rem;
     z-index: 1000;
     max-width: calc(1440px - 2rem);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid colors.$border;
     width: 90%;
     max-width: 1440px;
     a {
-        color: var(--text-black);
+        color: colors.$text_black;
         cursor: pointer;
         line-height: 1;
         img {

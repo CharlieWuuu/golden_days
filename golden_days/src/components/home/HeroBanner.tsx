@@ -5,15 +5,21 @@ export default function HeroBanner() {
     const heroRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        const computedStyle = getComputedStyle(heroRef.current!);
+        let bgOffset = Number(computedStyle.getPropertyValue('--bg-offset').replace('px', ''));
+
         const handleScroll = () => {
             if (!heroRef.current) return;
             const scrollY = window.scrollY;
-            heroRef.current.style.setProperty('--bg-offset', `${scrollY * 0.8}px`);
+
+            const newOffset = bgOffset + scrollY * 0.5;
+            heroRef.current.style.setProperty('--bg-offset', `${newOffset}px`);
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
     return (
         <section ref={heroRef} className={styles.HeroBanner}>
             <div>

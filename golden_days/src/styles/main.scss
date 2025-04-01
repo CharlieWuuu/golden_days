@@ -1,4 +1,4 @@
-@import './variables';
-@import './mixins';
-@import './reset';
-@import './base';
+@forward './colors';
+@forward './mixins';
+@forward './reset';
+@forward './base';

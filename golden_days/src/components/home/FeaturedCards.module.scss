@@ -1,9 +1,11 @@
+@use '../../styles/colors';
+
 .FeatureCards {
     h2 {
         font-size: 2rem;
     }
     .Divider {
-        border-top: 0.5px solid var(--border);
+        border-top: 0.5px solid colors.$border;
         margin: 0.5rem 0 1rem 0;
     }
     ul {
@@ -13,7 +15,7 @@
         li {
             display: flex;
             flex-direction: column;
-            border: 1px solid var(--border);
+            border: 1px solid colors.$border;
             padding: 1rem;
             flex-grow: 1;
             width: 35%;
