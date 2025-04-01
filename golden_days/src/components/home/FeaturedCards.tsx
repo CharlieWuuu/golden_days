@@ -15,7 +15,7 @@ export function FeatureCards({ CardItemList, CardType_EN, CardType_TW }: Feature
             <div className={styles.Divider}></div>
             <ul>
                 {CardItemList.slice(0, 3).map((CardItem) => (
-                    <li key={CardItem.id} style={{ marginBottom: '1rem' }}>
+                    <li key={CardItem.id}>
                         <h3>{CardItem.title}</h3>
                         <p>{CardItem.summary}</p>
                         <Link to={`/${CardType_EN}/${CardItem.id}`}>檢視{CardType_TW}</Link>

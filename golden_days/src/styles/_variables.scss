@@ -1,0 +1,19 @@
+// 文字顏色
+$text_black: rgba(20, 20, 20, 1);
+$text_white: rgba(240, 240, 240, 1);
+
+// 字體大小
+$font-base: 16px;
+$font-title: 24px;
+
+// 網站用色
+$border: rgba(150, 150, 150, 1);
+$gold: #d6af36;
+$gold_lighten: lighten($gold, 20%);
+$gold_darken: darken($gold, 10%);
+$gold_darken_2: darken($gold, 20%);
+
+// 間距
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;

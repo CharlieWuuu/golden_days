@@ -5,11 +5,14 @@
 .App {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-width: 1440px;
-    margin: auto;
     min-height: 100vh;
+
     main {
+        width: 90%;
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
     }
 }

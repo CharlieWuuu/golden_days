@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
+import style from './Footer.module.scss';
 
-export default function CallToActionFooter() {
+export default function Footer() {
     return (
-        <section style={{ padding: '2rem', background: '#eee', textAlign: 'center' }}>
+        <section className={style.Footer}>
             <p>想更認識金時光？</p>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-                <button>
-                    <Link to="/about">關於我們</Link>
-                </button>
-                <button>聯絡我們</button>
-                <button>加入我們</button>
+            <div>
+                <Link to="/about">關於我們</Link>
+
+                <p>聯絡我們</p>
+                <p>加入我們</p>
             </div>
         </section>
     );

@@ -2,13 +2,16 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import style from './Navbar.module.scss';
+import imgUrl from '../assets/images/logo_text.png';
 
 export default function Navbar() {
     const { isLoggedIn, logout } = useAuth();
 
     return (
         <nav className={style.Navbar}>
-            <Link to="/">首頁</Link>
+            <Link to="/">
+                <img src={imgUrl} alt="首頁" />
+            </Link>
             <div>
                 <Link to="/articles">文章清單</Link>
                 <Link to="/events">活動清單</Link>

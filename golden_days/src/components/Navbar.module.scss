@@ -4,16 +4,23 @@
     right: 0;
     width: 100%;
     padding: 1rem 0;
-    border-bottom: 1px solid #ccc;
+    margin: 0 auto 1rem auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
     z-index: 1000;
     max-width: calc(1440px - 2rem);
-    margin: auto;
+    border-bottom: 1px solid var(--border);
+    width: 90%;
+    max-width: 1440px;
     a {
         color: var(--text-black);
         cursor: pointer;
+        line-height: 1;
+        img {
+            height: 2rem;
+        }
     }
 
     div {

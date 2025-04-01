@@ -1,0 +1,28 @@
+@use '../styles/main.scss' as *;
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: $gold_darken;
+
+    padding: 2rem 0;
+    margin: 4rem 0 0 0;
+
+    p {
+        color: $text_white;
+    }
+    a {
+        color: $text_white;
+        &:hover {
+            color: $gold_lighten;
+        }
+    }
+    div {
+        display: flex;
+        gap: 2rem;
+    }
+}
