@@ -11,6 +11,6 @@ $font_title: 24px;
 // 網站用色
 $border: rgba(150, 150, 150, 1);
 $gold: #d6af36;
-$gold_lighten: lighten($gold, 20%);
+$gold_lighten: color.scale($gold, $lightness: 10%);
 $gold_darken: color.scale($gold, $lightness: -10%);
 $gold_darken_2: color.scale($gold, $lightness: -20%);
